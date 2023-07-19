@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <title>Js assignment 3</title>
+
+<head>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/all.css">
+    <link href="img/favicon.ico" rel="icon" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cairo:wght@200;300&family=Dancing+Script:wght@700&family=Geologica:wght@800&family=Inter:wght@400;600;700&family=Open+Sans:ital,wght@0,400;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto:ital,wght@0,100;1,100&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="">
+  
+
+<div class="container my-5">
+    <h1 class="mt-5 text-center">Bookmarker</h1>
+      <div class="my-5 form-group">
+        <h2 class="title text-center my-5 border border-2 border-success border-opacity-25 py-2">
+          <i class="fa-solid fa-bookmark" style="color: rgb(92, 184, 16);"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark" style="color: rgb(207, 204, 5);"></i>
+        </h2>
+        <div class="my-3 needs-validation" novalidate>
+          <label for="bookmarkName" class="pb-2 fw-semibold">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            Site Name</label
+          >
+          <div class="input-group has-validation">
+            <input
+            type="text"
+            placeholder="Bookmark Name"
+            class="form-control position-relative border-0 focus-ring focus-ring-warning"
+            id="bookmarkName"
+            required
+            aria-describedby="bookmarkNamePrepend"
+          />
+          <div class="invalid-tooltip position-absolute">
+           please insert a name must contain at least 3 characters
+          </div>
+
+          </div>
+        </div>
+        <div class="">
+          <label for="bookmarkURL" class="pb-2 fw-semibold">
+            <i class="fa-solid fa-link pe-2"></i>Site URL</label
+          >
+        <div  class="input-group has-validation">
+          <input
+          type="url"
+          placeholder="Website URL"
+          class="form-control border-0 focus-ring focus-ring-warning"
+          id="bookmarkURL"
+          required
+          aria-describedby="bookmarkNamePrepend"
+        />
+        <div class="invalid-tooltip position-absolute">
+          please insert a URL must have (.) and any characters
+         </div>
+        </div>
+        </div>
+        <div class="but d-flex justify-content-center">
+          <button class="btn btn-outline-success my-4 px-5" id="submitBtn">Submit</button>
+
+        </div>
+      </div>
+      <table class="table mt-4 text-center">
+        <thead class="">
+          <th class="text-capitalize">index</th>
+          <th class="text-capitalize">Website Name</th>
+          <th class="text-capitalize">Visit</th>
+          <th class="text-capitalize">Delete</th>
+        </thead>
+        <tbody id="tableContent"></tbody>
+      </table>
+    </div>
+
+<script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
